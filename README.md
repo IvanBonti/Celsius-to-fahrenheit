@@ -1,50 +1,34 @@
-# Primera-red-neuronal
-Red neuronal muy sencilla que trabaja haciendo predicciones entre los grados fahrenheit y celsius, la misma usa regresión lineal y el optimizador adam
+#First neural network 
+Simple Neural Network that works by making predictions between Fahrenheit and Celsius degrees, it uses linear regression and the Adam optimizer.
 
-Proyecto número 1: Convertir Celsius a Fahrenheit
+Project number 1: Convert Celsius to Fahrenheit
 
-•	Crearemos una red neuronal simple para el proceso de conversión de grados Fahrenheit a Celsius:
+• We will create a simple neural network for the process of converting Fahrenheit degrees to Celsius:
 
-•	La ecuación es la siguiente: T(F) = T(C) x 9/5 + 32
-Funcionamiento de la red:
+• The equation is as follows: T(F) = T(C) x 9/5 + 32 Network operation:
 
-•	El objetivo es predecir el valor de la variable Y sabiendo X, este proceso es la regresión.   
-¿Qué son las redes neuronales y cómo aprenden?
-Cuando creamos una red neuronal tenemos que tener en cuenta que lo que estamos haciendo es imitar el comportamiento del cerebro humano, algunos datos de curiosidad del cerebero: 
+• The goal is to predict the value of the Y variable knowing X, this process is regression.
+What are neural networks and how do they learn? When we create a neural network, we have to keep in mind that what we are doing is imitating the behavior of the human brain, some curious data about the brain:
 
-•	Tiene más de 100 mil millones de neuronas que se comunican entre sí a través de señales químicas y eléctricas
+• It has more than 100 billion neurons that communicate with each other through chemical and electrical signals
 
-•	Estas conexiones nos permiten a nosotros aprender, ver, pensar, generar ideas, etc.
+• These connections allow us to learn, see, think, generate ideas, etc.
 
-•	Las RNA son modelos de procesamiento de información inspirados en el cerebro humano.
-Explicación sencilla de cómo nuestro cerebro se da cuenta de lo que estamos viendo:
-Supongamos que vamos caminando por la calle y vemos un gato que pasa por enfrente nuestro: 
-Cuando la imagen del gato llega al cerebro, éste tiene como meta  darse cuenta de lo que está viendo y decirnos si es un gato o vió otra cosa. 
-Llega la imagen al cerebro, se realizan una serie de cálculos para ver si es realmente o no un gato, es decir, busca encontrar correlación entre las características de un gato o no. 
-Luego evalúa que tanto acertó con la predicción que hizo y se genera una pérdida, esta le damos el nombre de función de pérdida. 
-Actualización de pesos:
-Los pesos son lo que hacen que las redes aprendan por sí solas:
- 
-Los pesos son actualizados, cuando se reduce la función de pérdida, los pesos se van ajustando, van cambiando y esto hace que la red neuronal aprenda. 
+• ANNs are information processing models inspired by the human brain. Simple explanation of how our brain realizes what we are seeing: Let's say we are walking down the street and we see a cat passing by: When the image of the cat reaches the brain, its goal is to realize what it is seeing and tell us if it's a cat or saw something else. The image reaches the brain, a series of calculations are performed to see if it is really a cat or not, that is, it tries to find a correlation between the characteristics of a cat or not. Then it evaluates how well it guessed with the prediction it made and a loss is generated, we give this the name of loss function. Weight update: The weights are what make the neural networks learn on their own:
 
-Notas red neuronal que aprende a pasar grados Celsius a fahrenheit:
-1.	Pandas: Librería que sirve para interactuar con los datos que vamos a alimentar a la red
-2.	seaborn: Sirve para poder graficar los datos y visualizarlos en un gráfico.
-3.	Datos en formato csv: Las redes neuronales leen los datos en formato csv, esto es una tabla dividida por comas, cualquier excel se puede transformar.
-4.	Optimizador Adam = Es un optimizador que trabaja por descenso del gradiente
-5.	función de pérdida: Para un modelo lineal como este caso usamos una función de pérdida por mínimos cuadrados o también podemos decirle “Regresión lineal”
-6.	El optimizador adam se le puede pasar como parámetro un número más cercano a 1 y obtendremos mejores predicciones.
+The weights are updated when the loss function is reduced, the weights are adjusting, changing, and this makes the neural network learn.
 
-Generalización proyecto 1:
-Las redes neuronales que tienen dos columnas de valores y se relacionan mediante una fórmula, como por ejemplo el pasaje de grados Celsius a Fahrenheit, o todo ejemplo en el que se aplique el modelo simple de dado un valor de x se aplica una fórmula y se obtiene un y, se realiza con regresión lineal, podemos aplicar una capa densa y con unas cuantas vueltas de entrenamiento la red aprende por sí sola. 
-El procedimiento de construcción de la IA es el siguiente:
-1.	Crear una tabla dónde están los datos que después queremos predecir en formato .csv (cualquier excel se puede cambiar a esta extensión)
-2.	Poner el entorno de spyder en la carpeta dónde esté la tabla y empezar a escribir el codigo
+Notes neural network that learns to pass Celsius to Fahrenheit degrees:
 
-Entrenamiento y predicción con el modelo:
-Tenemos que la fórmula de pasaje de celsius a fahrenheit es la siguiente: 
-T(F) = T(C) * 9/5 +32
-Ejemplo:
-0C*9/5 + 32 = 32F
+Pandas: Library that serves to interact with the data that we are going to feed to the network
+seaborn: Serves to be able to graph the data and visualize it on a graph.
+Data in csv format: Neural networks read data in csv format, this is a table divided by commas, any excel can be transformed.
+Adam Optimizer = It is an optimizer that works by gradient descent
+loss function: For a linear model like this case we use a loss function by least squares or we can also call it "Linear Regression"
+The Adam optimizer can be passed as a parameter a number closer to 1 and we will obtain better predictions.
+Generalization project 1: Neural networks that have two columns of values and are related through a formula, such as the passage of Celsius degrees to Fahrenheit, or any example in which the simple model of given a value of x a formula is applied and a y is obtained, is done with linear regression, we can apply a dense layer and with a few training turns the network learns on its own. The procedure for building AI is as follows:
 
-
+Create a table where the data that we later want to predict is in .csv format (any excel can be changed to this extension)
+Put the spyder environment in the folder where the table is and start writing the code
+Training and prediction with the model.
+The formula for converting from Celsius to Fahrenheit is: T(F) = T(C) * 9/5 + 32 Example: 0C * 9/5 + 32 = 32F
